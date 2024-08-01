@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-blue-50">
+
+    <section class="relative h-[90vh]">
+
+
+        <section class="w-[90%] lg:h-[500px] bg-white m-auto absolute right-0 left-0 top-10 bottom-0 shadow-lg">
+
+            <main class="grid lg:grid-cols-2">
+                <!-- the card section -->
+                <div class="">
+
+                    <!-- debit card -->
+                    <div
+                        class="h-60 lg:mt-30 lg:w-[80%] lg:h-[50%] bg-blue-600 rounded-md mx-auto lg:my-28 font-mono text-white font-semibold flex flex-col justify-between">
+                        <div class="mt-20">
+                            <p id="card-number-p" class="px-5 text-2xl">0000 0000 0000 0000</p>
+                        </div>
+                        <div class="flex justify-between px-5 mb-5">
+                            <div>
+                                <p class="text-xs font-bold mb-1 py-1">CARD HOLDER</p>
+                                <p id="card-holder">John Doe</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold mb-1 py-1">VALID THRU</p>
+                                <p id="valid-date" class="text-center">MM/YY</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- form section -->
+                <div class="">
+                    <form action="" class="m-0 px-10 lg:my-10 font-mono">
+                        <h1 class="text-xl font-bold">Payment Details</h1>
+                        <div class="flex flex-col mt-5 relative">
+                            <label for="card-name">Cardholder Name</label>
+                            <img src="../img/user.svg" alt="" class="w-[30px] absolute top-7 ml-1">
+                            <input type="text" name="card-name" id="card-name" placeholder="John Doe"
+                                class="border-2 rounded-md py-2 px-10">
+                        </div>
+                        <div class="flex flex-col my-10 relative">
+                            <label for="card-number">Card Number</label>
+                            <img src="../img/debitCard.svg" alt="" class="w-[30px] absolute top-7 ml-1">
+                            <input type="number" name="card-number" id="card-number" placeholder="0000 0000 0000 0000"
+                                class="border-2 rounded-md py-2 px-10">
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="flex-1 flex flex-col relative">
+                                <label for="exp-date">Exp Date</label>
+                                <img src="../img/calender.svg" alt="" class="w-[25px] absolute top-8 ml-2">
+                                <input type="month" name="exp-date" id="exp-date" placeholder="MM/YY"
+                                    class="border-2 rounded-md py-2 px-10 w-[100%] ">
+                            </div>
+                            <div class="flex-1 flex flex-col relative">
+                                <label for="cvv-number">CVV</label>
+                                <img src="../img/lock.svg" alt="" class="w-[30px] absolute top-7 ml-1">
+                                <input type="number" name="cvv-number" id="cvv-number" placeholder="000"
+                                    class="border-2 rounded-md py-2 px-10 w-[100%]">
+                            </div>
+                        </div>
+                        <button class="bg-blue-500 text-white w-[100%] py-2 rounded-md mt-10">Confirm</button>
+                    </form>
+                </div>
+            </main>
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>
